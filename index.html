@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CAREER</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
+        integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+</head>
+
+<body>
+    <!-- ------------------------------------------------------NAVBAR-------------------------------------------------------------- -->
+    <nav class="navbar navbar-expand-lg bg-white">
+
+        <img src="https://i.ibb.co/Hx1dN58/cb-logo-navy-f99fc96c6c71fe50ef2d1bb09f0788d4657b16c4718b5d12030413b7fff413ac.png"
+            alt="" class='img-fluid w-25 mr-3'>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item ">
+                    <a class="nav-link" href="#">Find Jobs <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Create your profile</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Recommendations</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Resources</a>
+                </li>
+            </ul>
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#" id='signIn'>Sign In</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Employers
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">Employers Sign In</a>
+                        <a class="dropdown-item" href="#">Employers</a>
+                        <a class="dropdown-item" href="#">Search Resumes</a>
+                        <a class="dropdown-item" href="#">Post Jobs</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- ---------------------------------------------------Jobs and vacancies-------------------------------------------------------------- -->
+    <section class="jobs" style="background-color: #182642; color: #fff">
+        <div class="container">
+            <h3 class='pt-3'>Jobs and vacancies</h3>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="searchBox form-control mr-sm-2 mt-4 mb-4" type="search" placeholder="eg. Programmer"
+                    aria-label="Search">
+                <input class="searchBox form-control mr-sm-2 " type="search" placeholder="eg. Mumbai"
+                    aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" id='submitBtn' type="submit">Find Jobs</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- ---------------------------------------------------jobs Post-------------------------------------------------------------- -->
+    <section class="jobsPost mt-3 p-2">
+        <div class="row">
+            <div class="col-md-3 jobsPostLeft">
+                <!-- --------------------div start-------------- -->
+
+                <div class="d-flex justify-content-between">
+                    <h3>Date Posted</h3>
+                    <h3 onclick="toggleClock()" id="displayHideBtn">-</h3>
+                </div>
+
+                <div id='radioBtn'>
+                    <div class="radio">
+                        <label><input type="radio" name="optradio" class='radioBtn'>34 hours</label>
+                    </div>
+                    <div class="radio">
+                        <label><input type="radio" name="optradio" class='radioBtn'>3 days</label>
+                    </div>
+                    <div class="radio">
+                        <label><input type="radio" name="optradio" class='radioBtn'>7 days</label>
+                    </div>
+                    <div class="radio ">
+                        <label><input type="radio" name="optradio" class='radioBtn'>30 days</label>
+                    </div>
+                </div>
+
+                <hr>
+
+                <div class="d-flex justify-content-between">
+                    <h3>Job Type</h3>
+                    <h3 onclick="toggleClockTwo()" id="displayHideBtnTwo">-</h3>
+                </div>
+                <div id='Job'>
+                    <div class="checkbox">
+                        <label><input type="checkbox" value="" class='radioBtn'>All</label>
+                    </div>
+                    <div class="checkbox">
+                        <label><input type="checkbox" value="" class='radioBtn'>Full-Time Employee(123)</label>
+                    </div>
+                </div>
+
+                <hr>
+
+                <div class="d-flex justify-content-between">
+                    <h3>Categories</h3>
+                    <h3 onclick="toggleClockThree()" id="displayHideBtnThree">-</h3>
+                </div>
+                <div id='Categories'>
+                    <div class="checkbox">
+                        <label><input type="checkbox" value="" class='radioBtn'>Information Technology(62)</label>
+                    </div>
+                    <div class="checkbox">
+                        <label><input type="checkbox" value="" class='radioBtn'>Engineering(50)</label>
+                    </div>
+                    <div class="checkbox">
+                        <label><input type="checkbox" value="" class='radioBtn'>Professional Services(10</label>
+                    </div>
+                    <div class="checkbox">
+                        <label><input type="checkbox" value="" class='radioBtn'>Management(10)</label>
+                    </div>
+                    <div class="checkbox">
+                        <label><input type="checkbox" value="" class='radioBtn'>QA-Quality Control(9)</label>
+                    </div>
+                    <div class="checkbox">
+                        <label><input type="checkbox" value="" class='radioBtn'>Other(8)</label>
+                    </div>
+                    <div class="checkbox">
+                        <label><input type="checkbox" value="" class='radioBtn'>Accounting(7)</label>
+                    </div>
+                    <div class="checkbox">
+                        <label><input type="checkbox" value="" class='radioBtn'>Finance(7)</label>
+                    </div>
+                    <div class="checkbox">
+                        <label><input type="checkbox" value="" class='radioBtn'>Sales(7)</label>
+                    </div>
+                    <div class="checkbox">
+                        <label><input type="checkbox" value="" class='radioBtn'>Design(6)</label>
+                    </div>
+
+                    <div id="moreCategories">
+                        <div class="checkbox">
+                            <label><input type="checkbox" value="" class='radioBtn'>General Business(2)</label>
+                        </div>
+                        <div class="checkbox">
+                            <label><input type="checkbox" value="" class='radioBtn'>Skilled Labour - Trades(2)</label>
+                        </div>
+                        <div class="checkbox">
+                            <label><input type="checkbox" value="" class='radioBtn'>Supply Chain(2)</label>
+                        </div>
+                        <div class="checkbox">
+                            <label><input type="checkbox" value="" class='radioBtn'>Inventory(2)</label>
+                        </div>
+                        <div class="checkbox">
+                            <label><input type="checkbox" value="" class='radioBtn'>Manufacturing(2)</label>
+                        </div>
+                        <div class="checkbox">
+                            <label><input type="checkbox" value="" class='radioBtn'>Consultant(1)</label>
+                        </div>
+                        <div class="checkbox">
+                            <label><input type="checkbox" value="" class='radioBtn'>Strategy - Planning(1)</label>
+                        </div>
+                        <div class="checkbox">
+                            <label><input type="checkbox" value="" class='radioBtn'>Legal(1)</label>
+                        </div>
+
+                    </div>
+
+                    <button onclick="toggleCategories()" class="btn btn-outline-success" id="moreDisplay"
+                        type="submit">view more</button>
+                </div>
+
+                <hr>
+
+                <div class="d-flex justify-content-between">
+                    <h3>City</h3>
+                    <h3 onclick="toggleClockFour()" id="displayHideBtnFour">-</h3>
+                </div>
+                <div id='City'>
+                    <div class="radio">
+                        <label><input type="radio" name="optradio" class='radioBtn'>Pune(83)</label>
+                    </div>
+                    <div class="radio">
+                        <label><input type="radio" name="optradio" class='radioBtn'>Chandigarh(16)</label>
+                    </div>
+                    <div class="radio">
+                        <label><input type="radio" name="optradio" class='radioBtn'>Bengaluru(9)</label>
+                    </div>
+                    <div class="radio">
+                        <label><input type="radio" name="optradio" class='radioBtn'>Noida(5)</label>
+                    </div>
+                    <div class="radio">
+                        <label><input type="radio" name="optradio" class='radioBtn'>Chennai(3)</label>
+                    </div>
+                </div>
+
+            </div> <!-- --------------------div End-------------- -->
+
+            <div class="col-md-8">
+                <!-- --------------------div start-------------- -->
+                <button class="btn btn-outline-success" type="submit">Email me jobs like these</button>
+                <p class='mt-2'>Sort By: <a href="#">Relevance</a> | <a href="#">Date</a></p>
+                <hr>
+
+                <div class="job-description p-3">
+                    <h3>Software Developer</h3>
+                    <p><i class="far fa-clock mr-1"></i>posted 11 hours ago</p>
+                    <div class="location">
+                        <p class='p-3'> <i class="fas fa-hotel"></i> UST Global | <i class="fas fa-map-marker-alt"></i>
+                            Hyderabad | <i class="fas fa-suitcase"></i> Emp Type Jtft</p>
+                    </div>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus animi, culpa quos fugiat
+                        distinctio accusantium, tenetur voluptates aperiam vero possimus voluptatem nemo suscipit ullam,
+                        similique mollitia nisi optio quo laudantium!</p>
+                </div>
+
+                <div class="job-description p-3 mt-3">
+                    <h3>Software Developer</h3>
+                    <p><i class="far fa-clock mr-1"></i>posted 11 hours ago</p>
+                    <div class="location">
+                        <p class='p-3'> <i class="fas fa-hotel"></i> UST Global | <i class="fas fa-map-marker-alt"></i>
+                            Hyderabad | <i class="fas fa-suitcase"></i> Emp Type Jtft</p>
+                    </div>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus animi, culpa quos fugiat
+                        distinctio accusantium, tenetur voluptates aperiam vero possimus voluptatem nemo suscipit ullam,
+                        similique mollitia nisi optio quo laudantium!</p>
+                </div>
+
+                <div class="job-description p-3 mt-3">
+                    <h3>Software Developer</h3>
+                    <p><i class="far fa-clock mr-1"></i>posted 11 hours ago</p>
+                    <div class="location">
+                        <p class='p-3'> <i class="fas fa-hotel"></i> UST Global | <i class="fas fa-map-marker-alt"></i>
+                            Hyderabad | <i class="fas fa-suitcase"></i> Emp Type Jtft</p>
+                    </div>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus animi, culpa quos fugiat
+                        distinctio accusantium, tenetur voluptates aperiam vero possimus voluptatem nemo suscipit ullam,
+                        similique mollitia nisi optio quo laudantium!</p>
+                </div>
+
+                <div class="job-description p-3 mt-3">
+                    <h3>Software Developer</h3>
+                    <p><i class="far fa-clock mr-1"></i>posted 11 hours ago</p>
+                    <div class="location">
+                        <p class='p-3'> <i class="fas fa-hotel"></i> UST Global | <i class="fas fa-map-marker-alt"></i>
+                            Hyderabad | <i class="fas fa-suitcase"></i> Emp Type Jtft</p>
+                    </div>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus animi, culpa quos fugiat
+                        distinctio accusantium, tenetur voluptates aperiam vero possimus voluptatem nemo suscipit ullam,
+                        similique mollitia nisi optio quo laudantium!</p>
+                </div>
+
+                <div class="job-description p-3 mt-3">
+                    <h3>Software Developer</h3>
+                    <p><i class="far fa-clock mr-1"></i>posted 11 hours ago</p>
+                    <div class="location">
+                        <p class='p-3'> <i class="fas fa-hotel"></i> UST Global | <i class="fas fa-map-marker-alt"></i>
+                            Hyderabad | <i class="fas fa-suitcase"></i> Emp Type Jtft</p>
+                    </div>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus animi, culpa quos fugiat
+                        distinctio accusantium, tenetur voluptates aperiam vero possimus voluptatem nemo suscipit ullam,
+                        similique mollitia nisi optio quo laudantium!</p>
+                </div>
+
+                <div class="job-description p-3 mt-3">
+                    <h3>Software Developer</h3>
+                    <p><i class="far fa-clock mr-1"></i>posted 11 hours ago</p>
+                    <div class="location">
+                        <p class='p-3'> <i class="fas fa-hotel"></i> UST Global | <i class="fas fa-map-marker-alt"></i>
+                            Hyderabad | <i class="fas fa-suitcase"></i> Emp Type Jtft</p>
+                    </div>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus animi, culpa quos fugiat
+                        distinctio accusantium, tenetur voluptates aperiam vero possimus voluptatem nemo suscipit ullam,
+                        similique mollitia nisi optio quo laudantium!</p>
+                </div>
+
+            </div> <!-- --------------------div End-------------- -->
+
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal"
+                data-whatever="@mdo">Feedback</button>
+
+
+            <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">New message</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <form>
+                                <div class="form-group">
+                                    <label for="recipient-name" class="col-form-label">Recipient:</label>
+                                    <input type="text" class="form-control" id="recipient-name">
+                                </div>
+                                <div class="form-group">
+                                    <label for="message-text" class="col-form-label">Message:</label>
+                                    <textarea class="form-control" id="message-text"></textarea>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-primary">Send message</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+        crossorigin="anonymous"></script>
+    <script src="index.js"></script>
+</body>
+
+</html>

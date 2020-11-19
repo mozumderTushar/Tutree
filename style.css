@@ -1,0 +1,72 @@
+#signIn{
+    color: #FDC84B;
+}
+a.nav-link {
+    font-weight: 600;
+    color: black;
+}
+a.nav-link:hover{
+    color: #FDC84B;
+    border-bottom: 3px solid #FDC84B;
+}
+input.searchBox.form-control.mr-sm-2{
+    width: 360px;
+    height: 47px;
+}
+#submitBtn{
+    background-color: #2DBEF7;
+    color: #fff;
+    width: 200px;
+    height: 47px;
+    font-weight: 700;
+}
+
+.jobsPost{
+    background-color: #F8F8F8;
+   
+}
+.job-description{
+    background-color: #fff;
+    border:1 px solid gray;
+    border-radius: 30px;
+}
+.location{
+    background-color: #F8F8F8;
+    margin: 20px;
+    font-size: 15px;
+}
+.job-description:hover{
+    box-shadow: 0px 0px 10px #CCC;
+}
+.jobsPostLeft{
+    background-color: #fff
+}
+.radioBtn{
+    margin-right: 10px;
+}
+#displayHideBtn{
+    border: none;
+    background-color:white;
+    cursor: pointer;
+}
+#displayHideBtnTwo{
+    cursor: pointer;
+}
+#displayHideBtnThree{
+    cursor: pointer;
+}
+#displayHideBtnFour{
+    cursor: pointer;
+}
+#moreCategories{
+    display:none;
+}
+#moreDisplay{
+    width: -webkit-fill-available;
+    border-color: #2DBEF7;
+    color: #2DBEF7
+}
+#moreDisplay:hover{
+    background-color: #2DBEF7;
+    color: #fff
+}
